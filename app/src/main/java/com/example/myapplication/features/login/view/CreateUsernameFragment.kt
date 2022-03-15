@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.myapplication.databinding.FragmentCreateUsernameBinding
+import com.example.myapplication.db.AppDatabase
 import com.example.myapplication.features.BaseFragment
 import com.example.myapplication.features.login.repository.model.UserBody
 import com.example.myapplication.features.login.viewModel.CreateUsernameViewModel

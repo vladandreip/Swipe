@@ -37,7 +37,7 @@ interface CreateUsernameServiceApi {
             setLevel(HttpLoggingInterceptor.Level.BODY)
         }
 
-        fun get(): CreateUsernameServiceApi =
+        fun create(): CreateUsernameServiceApi =
             Retrofit.Builder()
                 .baseUrl("https://gorest.co.in/public/v2/")
                 .addConverterFactory(GsonConverterFactory.create())

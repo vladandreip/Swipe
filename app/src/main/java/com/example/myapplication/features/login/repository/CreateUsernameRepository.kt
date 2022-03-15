@@ -6,11 +6,10 @@ import com.example.myapplication.networking.Failure
 import com.example.myapplication.networking.Result
 import com.example.myapplication.networking.Success
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
 
 class CreateUsernameRepository(
-    private val api: CreateUsernameServiceApi =  CreateUsernameServiceApi.get()
+    private val api: CreateUsernameServiceApi =  CreateUsernameServiceApi.create()
 ) {
 
     fun createUsername(user: UserBody): Flow<Result<ApiUser>> = flow {
