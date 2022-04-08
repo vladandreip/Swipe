@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/createUsernameFragment">
+    app:startDestination="@id/entryFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -53,5 +53,49 @@
             app:destination="@+id/to_usersFragment" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.example.myapplication.features.dialogsFeature.EntryFragment"
+        android:label="entry_fragment">
+
+        <action
+            android:id="@+id/to_destinationFragment"
+            app:destination="@id/destinationFragment" />
+
+        <action
+            android:id="@+id/to_dispatchFragment"
+            app:destination="@id/dispatchFragment" />
+
+        <action
+            android:id="@+id/to_listFragment"
+            app:destination="@id/listFragment" />
+
+        <action
+            android:id="@+id/to_recyclerFragment"
+            app:destination="@id/recyclerList" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.example.myapplication.features.dialogsFeature.DestinationFragment"
+        android:label="entry_fragment" />
+
+    <fragment
+        android:id="@+id/dispatchFragment"
+        android:name="com.example.myapplication.features.dispatcher.DispatchFragment"
+        android:label="dispatch_fragment" />
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.myapplication.features.listFragment.ListFragment"
+        android:label="list_fragment" />
+
+    <fragment
+        android:id="@+id/recyclerList"
+        android:name="com.example.myapplication.features.recyclerFragment.RecyclerFragment"
+        android:label="recycler_fragment" />
 
 </navigation>
