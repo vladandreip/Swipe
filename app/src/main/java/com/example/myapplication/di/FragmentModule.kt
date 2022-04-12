@@ -8,6 +8,7 @@ import com.example.myapplication.features.home.view.HomeFragment
 import com.example.myapplication.features.listFragment.ListFragment
 import com.example.myapplication.features.login.view.CreateUsernameFragment
 import com.example.myapplication.features.recyclerFragment.RecyclerFragment
+import com.example.myapplication.features.swipeBoy.view.ItemsFragment
 import com.example.myapplication.features.users.UsersFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -41,5 +42,8 @@ abstract class FragmentModule {
 
     @ContributesAndroidInjector
     abstract fun recyclerFragment(): RecyclerFragment
+
+    @ContributesAndroidInjector
+    abstract fun itemsFragment(): ItemsFragment
 
 }

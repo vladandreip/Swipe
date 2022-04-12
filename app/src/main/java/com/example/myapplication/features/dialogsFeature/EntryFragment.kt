@@ -1,17 +1,11 @@
 package com.example.myapplication.features.dialogsFeature
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentEntryBinding
 import com.example.myapplication.features.BaseFragment
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 class EntryFragment: BaseFragment() {
 

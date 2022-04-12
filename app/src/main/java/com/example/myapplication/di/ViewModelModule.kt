@@ -3,6 +3,7 @@ package com.example.myapplication.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.features.login.viewModel.CreateUsernameViewModel
+import com.example.myapplication.features.swipeBoy.viewmodel.ItemsViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
@@ -19,6 +20,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(CreateUsernameViewModel::class)
     abstract fun bindCreateUsernameViewModel(viewModel: CreateUsernameViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ItemsViewModel::class)
+    abstract fun bindItemsViewModel(viewModel: ItemsViewModel): ViewModel
 
 }
 
