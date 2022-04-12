@@ -148,6 +148,7 @@ class SwipeFromStartCallback(action: Swiper.Action, private val listener: Swiper
             itemView.left + dX,
             itemView.bottom
         )
+        //
 
         colorDrawable.draw(canvas)
     }
